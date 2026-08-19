@@ -1,0 +1,630 @@
+/* =========================================
+   VISION + MISSION SECTION
+========================================= */
+
+.vision-mission-section {
+  width: 100%;
+
+  min-height: 720px;
+
+  padding:
+    72px
+    30px
+    95px;
+
+  background: #ffffff;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.vision-mission-container {
+  width: min(100%, 1020px);
+
+  margin: 0 auto;
+
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    0.84fr;
+
+  gap: 35px;
+
+  align-items: start;
+}
+
+
+/* =========================================
+   COMMON CARD
+========================================= */
+
+.vision-card,
+.mission-card {
+  position: relative;
+
+  background: #fff8ff;
+
+  border: 2px solid #f4e9f7;
+
+  box-shadow:
+    0 18px 35px rgba(77, 45, 97, 0.04);
+}
+
+
+/* =========================================
+   VISION CARD
+========================================= */
+
+.vision-card {
+  min-height: 370px;
+
+  margin-top: 24px;
+
+  padding:
+    44px
+    46px
+    42px;
+
+  border-radius:
+    55px
+    55px
+    55px
+    55px;
+}
+
+
+/* =========================================
+   VISION HEADING
+========================================= */
+
+.vision-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+}
+
+
+.vision-heading h2,
+.mission-heading h2 {
+  margin: 0;
+
+  color: #5422bd;
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 24px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   VISION ICON
+========================================= */
+
+.vision-icon {
+  width: 69px;
+
+  height: 69px;
+
+  flex-shrink: 0;
+
+  display: grid;
+
+  place-items: center;
+
+  color: #4d7922;
+
+  background: #b6f267;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   VISION DESCRIPTION
+========================================= */
+
+.vision-description {
+  max-width: 445px;
+
+  margin:
+    39px
+    0
+    30px;
+
+  color: #5a5363;
+
+  font-size: 21px;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.3px;
+}
+
+
+/* =========================================
+   VISION IMAGE
+========================================= */
+
+.vision-image {
+  position: absolute;
+
+  width: 126px;
+
+  height: 126px;
+
+  right: -20px;
+
+  top: -52px;
+
+  padding: 5px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  border: 1px solid #e8e1ea;
+
+  box-shadow:
+    0 5px 9px rgba(0, 0, 0, 0.15);
+
+  overflow: hidden;
+
+  z-index: 5;
+}
+
+
+.vision-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   ARABIC BUTTONS
+========================================= */
+
+.vision-arabic-button,
+.mission-arabic-button {
+  border: none;
+
+  border-radius: 6px;
+
+  background: #86c43f;
+
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  height: 24px;
+
+  padding:
+    0
+    12px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.vision-arabic-button:hover,
+.mission-arabic-button:hover {
+  background: #71aa32;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MISSION CARD
+========================================= */
+
+.mission-card {
+  min-height: 555px;
+
+  padding:
+    38px
+    38px
+    48px;
+
+  border-radius:
+    55px
+    55px
+    55px
+    105px;
+}
+
+
+/* =========================================
+   MISSION HEADING
+========================================= */
+
+.mission-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  margin-bottom: 28px;
+}
+
+
+.mission-icon {
+  width: 57px;
+
+  height: 57px;
+
+  display: grid;
+
+  place-items: center;
+
+  color: #ffffff;
+
+  background: #7139bf;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   MISSION DESCRIPTION
+========================================= */
+
+.mission-description {
+  margin: 0;
+
+  color: #5b5363;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  letter-spacing: 0.3px;
+}
+
+
+/* =========================================
+   MISSION TOP IMAGE
+========================================= */
+
+.mission-top-image {
+  position: absolute;
+
+  width: 76px;
+
+  height: 76px;
+
+  right: -13px;
+
+  top: -43px;
+
+  padding: 4px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+
+  border: 1px solid #ece6ed;
+
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.14);
+
+  overflow: hidden;
+
+  z-index: 5;
+}
+
+
+.mission-top-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   MISSION BOTTOM IMAGE
+========================================= */
+
+.mission-bottom-image {
+  position: absolute;
+
+  width: 88px;
+
+  height: 88px;
+
+  left: -42px;
+
+  bottom: -50px;
+
+  padding: 5px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+
+  border: 1px solid #ece6ed;
+
+  box-shadow:
+    0 4px 9px rgba(0, 0, 0, 0.15);
+
+  overflow: hidden;
+
+  z-index: 5;
+}
+
+
+.mission-bottom-image img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   MISSION BUTTON
+========================================= */
+
+.mission-arabic-button {
+  margin-top: 27px;
+}
+
+
+/* =========================================
+   STAR
+========================================= */
+
+.vision-star {
+  position: absolute;
+
+  left: 62px;
+
+  bottom: -4px;
+
+  width: 36px;
+
+  height: 36px;
+
+  display: grid;
+
+  place-items: center;
+
+  color: #ffffff;
+
+  background: #f39fc0;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   RAINBOW
+========================================= */
+
+.vision-rainbow {
+  position: absolute;
+
+  right: -10px;
+
+  top: -37px;
+
+  z-index: 5;
+
+  font-size: 84px;
+
+  transform: rotate(-3deg);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .vision-mission-section {
+    padding:
+      65px
+      25px
+      90px;
+  }
+
+
+  .vision-mission-container {
+    grid-template-columns: 1fr;
+
+    max-width: 650px;
+
+    gap: 55px;
+  }
+
+
+  .vision-card {
+    margin-top: 20px;
+  }
+
+
+  .mission-card {
+    min-height: 520px;
+  }
+
+
+  .vision-description {
+    max-width: none;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .vision-mission-section {
+    padding:
+      50px
+      15px
+      75px;
+  }
+
+
+  .vision-mission-container {
+    width: 100%;
+
+    gap: 55px;
+  }
+
+
+  .vision-card {
+    min-height: 350px;
+
+    padding:
+      35px
+      25px
+      35px;
+
+    margin-top: 15px;
+
+    border-radius: 35px;
+  }
+
+
+  .vision-heading h2,
+  .mission-heading h2 {
+    font-size: 21px;
+  }
+
+
+  .vision-icon {
+    width: 57px;
+
+    height: 57px;
+  }
+
+
+  .vision-description {
+    margin-top: 30px;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+  }
+
+
+  .vision-image {
+    width: 95px;
+
+    height: 95px;
+
+    right: -8px;
+
+    top: -48px;
+  }
+
+
+  .mission-card {
+    min-height: 520px;
+
+    padding:
+      30px
+      25px
+      45px;
+
+    border-radius:
+      35px
+      35px
+      35px
+      65px;
+  }
+
+
+  .mission-description {
+    font-size: 16px;
+
+    line-height: 1.7;
+  }
+
+
+  .mission-top-image {
+    width: 66px;
+
+    height: 66px;
+
+    right: -4px;
+
+    top: -40px;
+  }
+
+
+  .mission-bottom-image {
+    width: 75px;
+
+    height: 75px;
+
+    left: -20px;
+
+    bottom: -42px;
+  }
+
+
+  .vision-star {
+    left: 20px;
+
+    bottom: 0;
+
+    width: 32px;
+
+    height: 32px;
+  }
+
+
+  .vision-rainbow {
+    right: -20px;
+
+    top: -25px;
+
+    font-size: 62px;
+  }
+
+}

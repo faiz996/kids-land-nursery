@@ -1,0 +1,413 @@
+/* =========================================
+   PRINCIPAL SECTION
+========================================= */
+
+.principal-section {
+  width: 100%;
+
+  padding: 60px 30px 78px;
+
+  background: #f4f0ff;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   WRAPPER
+========================================= */
+
+.principal-wrapper {
+  width: 100%;
+
+  max-width: 1170px;
+
+  margin: 0 auto;
+
+  position: relative;
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.principal-card {
+  width: 100%;
+
+  min-height: 645px;
+
+  padding:
+    27px
+    90px
+    48px;
+
+  position: relative;
+
+  background: #f8ffe9;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.principal-title {
+  margin: 0;
+
+  color: #311B92;
+
+  font-family: "Be Vietnam Pro", sans-serif;
+
+  font-size: 46.74px;
+
+  font-weight: 600;
+  font-style: SemiBold;
+
+  line-height: 66.78px;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   PRINCIPAL PHOTO
+========================================= */
+
+.principal-photo-wrapper {
+  width: 261.41px;
+
+  height: 243.2px;
+
+  margin:
+    27px
+    auto
+    18px;
+
+  padding: 3px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+
+  border: 1px solid #d8d8d8;
+
+  box-shadow:
+    0 3px 4px rgba(0, 0, 0, 0.15);
+
+  overflow: hidden;
+}
+
+
+.principal-photo {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================
+   TEXT AREA
+========================================= */
+
+.principal-text {
+  width: 100%;
+
+  color: #111111;
+
+  font-size: 14px;
+
+  line-height: 1.95;
+
+  font-weight: 400;
+}
+
+
+.principal-text p {
+  margin:
+    0
+    0
+    5px;
+}
+
+
+/* =========================================
+   DEAR PARENTS
+========================================= */
+
+.dear-parents {
+  color: #83c53f;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  margin-bottom: 4px !important;
+
+  font-family: "Be Vietnam Pro";
+}
+
+
+/* =========================================
+   PURPLE FIRST MESSAGE
+========================================= */
+
+.purple-message {
+  color: #28169a;
+
+  font-size: 14px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================
+   SIGNATURE
+========================================= */
+
+.principal-signature {
+  color: #83c53f;
+
+  font-weight: 700;
+
+  margin-top: 3px !important;
+}
+
+
+/* =========================================
+   ARABIC BUTTON
+========================================= */
+
+.arabic-button {
+  position: absolute;
+
+  right: 56px;
+
+  bottom: 50px;
+
+  min-width: 121px;
+
+  height: 36px;
+
+  padding:
+    0
+    15px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #87c441;
+
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.arabic-button:hover {
+  background: #72ad31;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   CLOUD
+========================================= */
+
+.principal-cloud {
+  position: absolute;
+
+  right: -31px;
+
+  top: -14px;
+
+  z-index: 5;
+
+  color: #83bee9;
+
+  font-size: 65px;
+
+  line-height: 1;
+
+  text-shadow:
+    0 2px 0 #ffffff;
+
+  transform: rotate(-2deg);
+}
+
+
+/* =========================================
+   SUN
+========================================= */
+
+.principal-sun {
+  position: absolute;
+
+  left: -22px;
+
+  bottom: -18px;
+
+  z-index: 5;
+
+  color: #ffb800;
+
+  font-size: 62px;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .principal-section {
+    padding:
+      45px
+      20px
+      65px;
+  }
+
+
+  .principal-card {
+    padding:
+      27px
+      50px
+      80px;
+  }
+
+
+  .principal-title {
+    font-size: 28px;
+  }
+
+
+  .principal-text {
+    font-size: 13px;
+
+    line-height: 1.8;
+  }
+
+
+  .arabic-button {
+    right: 35px;
+
+    bottom: 30px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .principal-section {
+    padding:
+      30px
+      12px
+      65px;
+  }
+
+
+  .principal-card {
+    min-height: auto;
+
+    padding:
+      25px
+      20px
+      75px;
+
+    border-radius: 10px;
+  }
+
+
+  .principal-title {
+    font-size: 23px;
+
+    line-height: 1.35;
+  }
+
+
+  .principal-photo-wrapper {
+    width: 125px;
+
+    height: 125px;
+
+    margin-top: 22px;
+  }
+
+
+  .principal-text {
+    font-size: 13px;
+
+    line-height: 1.75;
+
+    text-align: left;
+  }
+
+
+  .purple-message {
+    font-size: 13px;
+  }
+
+
+  .principal-cloud {
+    right: -15px;
+
+    top: -13px;
+
+    font-size: 48px;
+  }
+
+
+  .principal-sun {
+    left: -12px;
+
+    bottom: -12px;
+
+    font-size: 48px;
+  }
+
+
+  .arabic-button {
+    right: 20px;
+
+    bottom: 25px;
+
+    height: 34px;
+
+    min-width: 112px;
+
+    font-size: 13px;
+  }
+
+}

@@ -1,0 +1,716 @@
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section {
+  width: 100%;
+
+  min-height: 638px;
+
+  padding:
+    72px
+    30px
+    0;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #f4f1ff;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.about-container {
+  width: min(100%, 900px);
+
+  min-height: 560px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 48px;
+
+  align-items: center;
+
+  position: relative;
+}
+
+
+/* =========================================
+   IMAGE AREA
+========================================= */
+
+.about-image-area {
+  width: 100%;
+
+  height: 390px;
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* Green offset border */
+
+.about-image-area::after {
+  content: "";
+
+  position: absolute;
+
+  width: 415px;
+
+  height: 380px;
+
+  left: 6px;
+
+  top: 12px;
+
+  border: 2px solid #8cc63f;
+
+  border-radius:
+    48%
+    45%
+    50%
+    43%;
+
+  transform: rotate(-3deg);
+
+  z-index: 0;
+}
+
+
+/* =========================================
+   WHITE IMAGE FRAME
+========================================= */
+
+.about-image-border {
+  width: 430px;
+
+  height: 380px;
+
+  position: relative;
+
+  z-index: 2;
+
+  padding: 7px;
+
+  background: #ffffff;
+
+  border-radius:
+    48%
+    45%
+    50%
+    43%;
+
+  box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.12);
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   MAIN IMAGE
+========================================= */
+
+.about-main-image {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  border-radius:
+    48%
+    45%
+    50%
+    43%;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.about-content {
+  position: relative;
+
+  z-index: 5;
+
+  padding-bottom: 35px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.about-label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #00a25a;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.about-title {
+  margin: 0 0 18px;
+
+  color: #382496;
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 38px;
+
+  font-weight: 900;
+
+  line-height: 0.98;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.about-description {
+  max-width: 475px;
+
+  margin:
+    0
+    0
+    13px;
+
+  color: #555467;
+
+  font-size: 12px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.about-features {
+  margin-top: 22px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 13px;
+}
+
+
+.about-feature {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  color: #343347;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   FEATURE ICON
+========================================= */
+
+.feature-icon {
+  width: 14px;
+
+  height: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #9a4ce5;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   ABOUT BUTTON
+========================================= */
+
+.about-button {
+  width: fit-content;
+
+  min-width: 187px;
+
+  height: 40px;
+
+  margin-top: 28px;
+
+  padding:
+    0
+    22px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  border: 2px solid #3c1fb5;
+
+  border-radius: 24px;
+
+  color: #3017a4;
+
+  background: transparent;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.about-button:hover {
+  color: #ffffff;
+
+  background: #3c1fb5;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   DECORATIVE GARDEN
+========================================= */
+
+.about-garden {
+  position: absolute;
+
+  right: -20px;
+
+  bottom: -1px;
+
+  width: 250px;
+
+  height: 270px;
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   SUN
+========================================= */
+
+.garden-sun {
+  position: absolute;
+
+  width: 51px;
+
+  height: 51px;
+
+  right: 0;
+
+  top: 30px;
+
+  border-radius: 50%;
+
+  background: #f8d95c;
+
+  box-shadow:
+    0 -17px 0 -23px #f8d95c,
+    0 17px 0 -23px #f8d95c,
+    17px 0 0 -23px #f8d95c,
+    -17px 0 0 -23px #f8d95c,
+    12px 12px 0 -23px #f8d95c,
+    -12px -12px 0 -23px #f8d95c,
+    12px -12px 0 -23px #f8d95c,
+    -12px 12px 0 -23px #f8d95c;
+}
+
+
+/* =========================================
+   TREE
+========================================= */
+
+.garden-tree {
+  position: absolute;
+
+  left: 25px;
+
+  bottom: 20px;
+
+  width: 180px;
+
+  height: 190px;
+}
+
+
+/* Tree crown */
+
+.tree-crown {
+  position: absolute;
+
+  border-radius: 50%;
+
+  background: #82ad83;
+}
+
+
+.tree-crown-one {
+  width: 110px;
+
+  height: 90px;
+
+  left: 33px;
+
+  top: 22px;
+}
+
+
+.tree-crown-two {
+  width: 95px;
+
+  height: 100px;
+
+  left: 5px;
+
+  top: 45px;
+}
+
+
+.tree-crown-three {
+  width: 100px;
+
+  height: 95px;
+
+  right: 0;
+
+  top: 48px;
+}
+
+
+/* Tree trunk */
+
+.tree-trunk {
+  position: absolute;
+
+  left: 82px;
+
+  top: 84px;
+
+  width: 28px;
+
+  height: 105px;
+
+  background: #efbc5d;
+
+  clip-path: polygon(
+    25% 0,
+    75% 0,
+    65% 58%,
+    100% 100%,
+    72% 100%,
+    50% 72%,
+    30% 100%,
+    0 100%,
+    37% 57%
+  );
+}
+
+
+/* =========================================
+   GRASS
+========================================= */
+
+.garden-grass {
+  position: absolute;
+
+  bottom: 0;
+
+  left: 0;
+
+  width: 250px;
+
+  height: 50px;
+
+  background: #83b989;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-around;
+}
+
+
+.garden-grass span {
+  width: 17px;
+
+  height: 55px;
+
+  margin-top: -27px;
+
+  background: #72a87b;
+
+  clip-path: polygon(
+    50% 0,
+    100% 100%,
+    0 100%
+  );
+
+  transform: rotate(
+    calc(var(--i, 0) * 4deg)
+  );
+}
+
+
+/* =========================================
+   BUTTERFLY
+========================================= */
+
+.garden-butterfly {
+  position: absolute;
+
+  left: 14px;
+
+  top: 13px;
+
+  font-size: 32px;
+
+  transform: rotate(-15deg);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .about-section {
+    padding:
+      60px
+      25px
+      0;
+  }
+
+
+  .about-container {
+    width: min(100%, 700px);
+
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+
+  .about-image-area {
+    height: 350px;
+  }
+
+
+  .about-image-border {
+    width: 400px;
+
+    max-width: 90%;
+
+    height: 350px;
+  }
+
+
+  .about-image-area::after {
+    width: 385px;
+
+    max-width: 90%;
+
+    height: 350px;
+
+    left: 50%;
+
+    transform:
+      translateX(-48%)
+      rotate(-3deg);
+  }
+
+
+  .about-content {
+    padding:
+      0
+      0
+      100px;
+  }
+
+
+  .about-title {
+    font-size: 35px;
+  }
+
+
+  .about-garden {
+    right: -20px;
+
+    transform: scale(0.85);
+
+    transform-origin: bottom right;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .about-section {
+    min-height: auto;
+
+    padding:
+      45px
+      15px
+      0;
+  }
+
+
+  .about-container {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+
+  .about-image-area {
+    width: 100%;
+
+    height: 310px;
+  }
+
+
+  .about-image-border {
+    width: 330px;
+
+    max-width: 92%;
+
+    height: 295px;
+  }
+
+
+  .about-image-area::after {
+    width: 315px;
+
+    max-width: 88%;
+
+    height: 295px;
+
+    left: 50%;
+
+    top: 8px;
+
+    transform:
+      translateX(-48%)
+      rotate(-3deg);
+  }
+
+
+  .about-content {
+    width: 100%;
+
+    padding:
+      15px
+      5px
+      180px;
+  }
+
+
+  .about-label {
+    font-size: 11px;
+  }
+
+
+  .about-title {
+    font-size: 31px;
+
+    line-height: 1.05;
+  }
+
+
+  .about-description {
+    font-size: 12px;
+
+    line-height: 1.7;
+  }
+
+
+  .about-feature {
+    font-size: 11px;
+  }
+
+
+  .about-button {
+    height: 38px;
+
+    min-width: 180px;
+  }
+
+
+  .about-garden {
+    right: -35px;
+
+    bottom: 0;
+
+    transform: scale(0.7);
+
+    transform-origin: bottom right;
+  }
+
+}

@@ -1,0 +1,457 @@
+/* =========================================
+   LEARNING SECTION
+========================================= */
+
+.learning-section {
+  width: 100%;
+
+  padding:
+    68px
+    22px
+    28px;
+
+  background: #faf7ff;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.learning-container {
+  width: 100%;
+
+  max-width: 1065px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.learning-header {
+  text-align: center;
+
+  margin-bottom: 54px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.learning-label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #00a45a;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.learning-title {
+  margin: 0;
+
+  color: #38219a;
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 40px;
+
+  font-weight: 900;
+
+  line-height: 1.1;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.learning-subtitle {
+  margin:
+    18px
+    auto
+    0;
+
+  color: #565565;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  font-weight: 400;
+}
+
+
+/* =========================================
+   PROGRAM GRID
+========================================= */
+
+.learning-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 20px;
+
+  align-items: stretch;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.learning-card {
+  min-width: 0;
+
+  min-height: 342px;
+
+  padding:
+    21px
+    20px
+    19px;
+
+  border-radius: 14px;
+
+  text-align: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.learning-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 12px 25px rgba(60, 30, 90, 0.1);
+}
+
+
+/* =========================================
+   CARD COLORS
+========================================= */
+
+.little-angels {
+  background: #ffcbbd;
+}
+
+
+.toddlers {
+  background: #fff7bf;
+}
+
+
+.discoveries {
+  background: #dcedc8;
+}
+
+
+.inventors {
+  background: #b8dcfa;
+}
+
+
+/* =========================================
+   IMAGE WRAPPER
+========================================= */
+
+.learning-image-wrapper {
+  width: 100%;
+
+  height: 163px;
+
+  padding: 3px;
+
+  background: #ffffff;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.learning-image {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 7px;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.learning-card-content {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  flex: 1;
+}
+
+
+/* =========================================
+   PROGRAM TITLE
+========================================= */
+
+.learning-card h3 {
+  margin:
+    22px
+    0
+    5px;
+
+  color: #151523;
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 800;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================
+   AGE
+========================================= */
+
+.learning-age {
+  margin: 0;
+
+  color: #11111b;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.learning-description {
+  width: 100%;
+
+  max-width: 190px;
+
+  margin:
+    11px
+    auto
+    0;
+
+  color: #55515c;
+
+  font-size: 10px;
+
+  line-height: 1.45;
+}
+
+
+/* =========================================
+   LEARN MORE
+========================================= */
+
+.learning-more {
+  margin-top: auto;
+
+  padding-top: 20px;
+
+  color: #f04845;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.4px;
+
+  text-decoration: none;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.learning-more:hover {
+  opacity: 0.75;
+
+  transform: translateY(-1px);
+}
+
+
+/* Different button colors */
+
+.toddlers .learning-more {
+  color: #ae7412;
+}
+
+
+.discoveries .learning-more {
+  color: #00965a;
+}
+
+
+.inventors .learning-more {
+  color: #2472ed;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .learning-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 22px;
+  }
+
+
+  .learning-card {
+    min-height: 350px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .learning-section {
+    padding:
+      50px
+      15px
+      30px;
+  }
+
+
+  .learning-header {
+    margin-bottom: 35px;
+  }
+
+
+  .learning-label {
+    font-size: 11px;
+  }
+
+
+  .learning-title {
+    font-size: 30px;
+  }
+
+
+  .learning-subtitle {
+    font-size: 12px;
+
+    padding:
+      0
+      10px;
+  }
+
+
+  .desktop-break {
+    display: none;
+  }
+
+
+  .learning-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+
+  .learning-card {
+    min-height: 350px;
+
+    max-width: 330px;
+
+    width: 100%;
+
+    margin: 0 auto;
+
+    padding:
+      20px
+      20px
+      22px;
+  }
+
+
+  .learning-image-wrapper {
+    height: 175px;
+  }
+
+
+  .learning-card h3 {
+    margin-top: 20px;
+
+    font-size: 16px;
+  }
+
+
+  .learning-age {
+    font-size: 12px;
+  }
+
+
+  .learning-description {
+    font-size: 11px;
+
+    max-width: 220px;
+  }
+
+
+  .learning-more {
+    font-size: 11px;
+
+    padding-top: 18px;
+  }
+
+}

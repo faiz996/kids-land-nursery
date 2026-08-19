@@ -1,0 +1,516 @@
+.home-page {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section {
+  width: 100%;
+  position: relative;
+  padding: 25px 0 100px;
+  background: #ffffff;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+  padding: 0 30px;
+}
+
+
+/* =========================
+   EXACT HERO IMAGE
+========================= */
+
+.hero-card-image {
+  position: relative;
+
+  width: 58%;
+  max-width: 800px;
+
+  flex-shrink: 0;
+}
+
+.hero-card-image > img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+/* =========================
+   REGISTER YOUR INTEREST
+   EXACT BUTTON
+========================= */
+
+.interest-button {
+  position: absolute;
+
+  /* Position inside hero image */
+  left: 50%;
+  bottom: 10%;
+
+  transform: translateX(-50%);
+
+  width: 385px;
+  height: 89px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 8px 0 20px;
+
+  background: #8bc63f;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 12772px;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 22.99px;
+  font-weight: 700;
+
+  line-height: 35.77px;
+  white-space: nowrap;
+
+  text-decoration: none;
+
+  box-shadow: 0 4px 10px rgba(112, 170, 40, 0.18);
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.interest-button:hover {
+  transform: translateX(-50%) translateY(-2px);
+
+  box-shadow: 0 6px 14px rgba(112, 170, 40, 0.25);
+}
+
+
+/* =========================
+   WHITE ARROW CIRCLE
+========================= */
+
+.interest-arrow {
+  width: 51.1px;
+  height: 51.1px;
+
+  min-width: 27px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  color: #7abb35;
+
+  border-radius: 50%;
+}
+
+.interest-arrow svg {
+  width: 20.12px;
+  height: 17.24px;
+
+  stroke-width: 2.5;
+}
+
+
+/* =========================
+   RIGHT IMAGE AREA
+========================= */
+
+.hero-images {
+  position: relative;
+
+  width: 370px;
+  height: 470px;
+
+  flex-shrink: 0;
+
+  margin-top: -5px;
+}
+
+
+/* Main flower image */
+
+.hero-image {
+  position: absolute;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+.flower-image {
+  width: 556px;
+  height: 723px;
+
+  left: -290px;
+  top: -120px;
+
+  /* border: 1.5px solid #e7bd36; */
+
+  border-radius: 100px;
+
+  z-index: 3;
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================
+   PLACEHOLDER IMAGES
+========================= */
+
+.jumping-image {
+  width: 576px;
+  height: 964px;
+
+  right: -50px;
+  top: -150px;
+
+  /* border: 1.5px solid #eaa052; */
+
+  border-radius: 75px;
+
+  z-index: 2;
+}
+
+.jumping-image .hero-photo {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+/* .image-placeholder {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.jumping-placeholder {
+  background: #fff0e8;
+  color: #f08a45;
+}
+
+.painting-placeholder {
+  background: #eee8ff;
+  color: #8058c8;
+} */
+
+
+/* =========================
+   DECORATIONS
+========================= */
+
+.hero-sparkle {
+  position: absolute;
+
+  z-index: 10;
+}
+
+.sparkle-one {
+  top: -15px;
+  right: 105px;
+
+  color: #c78ce5;
+}
+
+.sparkle-two {
+  top: 205px;
+  right: -3px;
+
+  color: #f2be36;
+}
+
+.hero-plane {
+  position: absolute;
+
+  top: 3px;
+  left: 102px;
+
+  z-index: 10;
+
+  color: #8e6bd0;
+
+  transform: rotate(-20deg);
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.statistics-card {
+  width: 1247px;
+  height: 218px;
+
+  margin: -2px 0 0 28px;
+
+  position: relative;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 42px;
+
+  background: #ffffff;
+
+  border: 1px solid #f0f0f0;
+  border-radius: 50px;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================
+   STAT ITEM
+========================= */
+
+.stat-item {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  min-width: 145px;
+}
+
+
+/* =========================
+   STAT ICON
+========================= */
+
+.stat-icon {
+  width: 100px;
+  height: 100px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 18px;
+}
+
+
+/* Purple */
+
+.stat-purple {
+  background: #eee8fa;
+  color: #7850c8;
+}
+
+
+/* Green */
+
+.stat-green {
+  background: #e6f3e8;
+  color: #55b566;
+}
+
+
+/* Pink */
+
+.stat-pink {
+  background: #fbe4eb;
+  color: #ed3971;
+}
+
+
+/* =========================
+   STAT NUMBER
+========================= */
+
+.stat-item strong {
+  display: block;
+
+  margin: 0 0 2px;
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 45.29px;
+  line-height: 50.32px;
+
+  font-weight: 900;
+}
+
+
+/* Number colors */
+
+.stat-purple + div strong,
+.stat-item:nth-child(1) strong {
+  color: #7950c8;
+}
+
+.stat-item:nth-child(3) strong {
+  color: #58b668;
+}
+
+.stat-item:nth-child(5) strong {
+  color: #ed3971;
+}
+
+
+/* =========================
+   STAT DESCRIPTION
+========================= */
+
+.stat-item span {
+  display: block;
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 17.61px;
+  font-weight: 600;
+
+  line-height: 24.22px;
+
+  color: #687080;
+
+  letter-spacing: 0.88px;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.stat-divider {
+  width: 1.26px;
+  height: 120.77px;
+
+  flex-shrink: 0;
+
+  background: #eeeeee;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-card-image {
+    width: 90%;
+    max-width: 800px;
+  }
+
+  .hero-images {
+    width: 90%;
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 15px;
+  }
+
+  .hero-container {
+    padding: 0 15px;
+  }
+
+  .hero-card-image {
+    width: 100%;
+  }
+
+  .interest-button {
+    height: 38px;
+
+    left: 18%;
+    bottom: 8%;
+
+    padding-left: 16px;
+
+    font-size: 10px;
+  }
+
+  .interest-arrow {
+    width: 24px;
+    height: 24px;
+  }
+
+  .hero-images {
+    width: 100%;
+    min-height: 350px;
+  }
+
+  .flower-image {
+    height: 280px;
+  }
+
+  .jumping-image,
+  .painting-image {
+    height: 170px;
+  }
+
+  .statistics-card {
+    width: calc(100% - 30px);
+
+    padding: 15px 10px;
+
+    gap: 8px;
+  }
+
+  .stat-item {
+    gap: 7px;
+  }
+
+  .stat-icon {
+    width: 38px;
+    height: 38px;
+
+    font-size: 15px;
+  }
+
+  .stat-item strong {
+    font-size: 17px;
+  }
+
+  .stat-item span {
+    font-size: 6px;
+  }
+}

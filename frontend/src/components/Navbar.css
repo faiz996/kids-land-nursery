@@ -1,0 +1,286 @@
+.site-header {
+  width: 100%;
+  height: 195px;
+  background: #ffffff;
+
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-container {
+  width: 1573.595px;
+  height: 147px;
+
+  position: absolute;
+  top: 24px;
+  left: 126px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 129px;
+
+  opacity: 1;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.kids-logo {
+  width: 190px;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.logo-image {
+  width: 190px;
+  height: auto;
+  max-height: 120px;
+
+  object-fit: contain;
+  display: block;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.main-navigation {
+  width: 1255px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 6px;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeeee;
+  border-radius: 40px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+  gap: 0;
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.nav-link {
+  position: relative;
+
+  height: 58px;
+
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 25px;
+
+  color: #3f465b;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition: all 0.25s ease;
+}
+
+/* Separators */
+
+.nav-link:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  top: 18px;
+
+  width: 1px;
+  height: 24px;
+
+  background: #eeeeee;
+}
+
+/* =========================
+   ACTIVE HOME
+========================= */
+
+.nav-link.active {
+  color: #ffffff;
+
+  background: #7c3aed;
+
+  border-radius: 32px;
+
+  font-weight: 700;
+
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.2);
+}
+
+.nav-link.active::after {
+  display: none;
+}
+
+/* =========================
+   HOVER
+========================= */
+
+.nav-link:not(.active):hover {
+  color: #6334c8;
+}
+
+.nav-link.active:hover {
+  color: #ffffff;
+}
+
+/* =========================
+   MOBILE BUTTON
+========================= */
+
+.mobile-menu-button {
+  display: none;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1700px) {
+  .navbar-container {
+    width: calc(100% - 80px);
+    left: 40px;
+    gap: 60px;
+  }
+
+  .main-navigation {
+    width: auto;
+    flex: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar-container {
+    width: calc(100% - 40px);
+    left: 20px;
+
+    gap: 30px;
+  }
+
+  .logo-image {
+    width: 150px;
+  }
+
+  .kids-logo {
+    width: 150px;
+  }
+
+  .nav-link {
+    font-size: 15px;
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    height: 90px;
+  }
+
+  .navbar-container {
+    width: calc(100% - 30px);
+    height: 75px;
+
+    top: 8px;
+    left: 15px;
+
+    gap: 0;
+
+    justify-content: space-between;
+  }
+
+  .kids-logo {
+    width: 130px;
+    height: 70px;
+  }
+
+  .logo-image {
+    width: 125px;
+    max-height: 70px;
+  }
+
+  .mobile-menu-button {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #f5f2ff;
+    color: #6334c8;
+
+    cursor: pointer;
+  }
+
+  .main-navigation {
+    display: none;
+
+    position: absolute;
+
+    top: 80px;
+    left: 0;
+
+    width: 100%;
+    height: auto;
+
+    padding: 10px;
+
+    flex-direction: column;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  }
+
+  .main-navigation.show {
+    display: flex;
+  }
+
+  .nav-link {
+    width: 100%;
+    height: 45px;
+
+    flex: none;
+
+    justify-content: flex-start;
+
+    padding: 0 20px;
+  }
+
+  .nav-link:not(:last-child)::after {
+    display: none;
+  }
+
+  .nav-link.active {
+    justify-content: flex-start;
+  }
+}

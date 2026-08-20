@@ -4,6 +4,8 @@ import VisionMission from "./components/VisionMission";
 import AboutSection from "./components/AboutSection";
 import LearningSection from "./components/LearningSection";
 import Home from "./pages/Home";
+import AdmissionSection from "./components/AdmissionSection";
+import GallerySection from "./components/GallerySection";
 
 function App() {
   return (
@@ -19,6 +21,10 @@ function App() {
       <AboutSection />
 
       <LearningSection />
+
+      <AdmissionSection />
+
+      <GallerySection />
     </>
   );
 }

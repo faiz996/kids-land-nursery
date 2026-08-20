@@ -1,0 +1,419 @@
+/* =========================================
+   GALLERY SECTION
+========================================= */
+
+.gallery-section {
+  width: 100%;
+
+  min-height: 540px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #f3f0ff;
+
+  padding:
+    105px
+    28px
+    95px;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.gallery-container {
+  width: 100%;
+
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  position: relative;
+
+  z-index: 3;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.gallery-header {
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.gallery-label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #00a45a;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.gallery-title {
+  margin: 0;
+
+  color: #38219a;
+
+  font-family: "Nunito", sans-serif;
+
+  font-size: 34px;
+
+  font-weight: 900;
+
+  line-height: 1.1;
+}
+
+
+/* =========================================
+   FOUR IMAGES
+========================================= */
+
+.gallery-images {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+}
+
+
+/* =========================================
+   IMAGE BOX
+========================================= */
+
+.gallery-image-box {
+  width: 100%;
+
+  height: 250px;
+
+  overflow: hidden;
+
+  border-radius: 27px;
+
+  background: #ffffff;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.gallery-image-box img {
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+.gallery-image-box:hover img {
+  transform: scale(1.06);
+}
+
+
+/* =========================================
+   BUTTON WRAPPER
+========================================= */
+
+.gallery-button-wrapper {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 46px;
+}
+
+
+/* =========================================
+   FULL GALLERY BUTTON
+========================================= */
+
+.gallery-button {
+  height: 39px;
+
+  min-width: 181px;
+
+  padding:
+    0
+    21px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  border: 2px solid #08a55c;
+
+  border-radius: 25px;
+
+  color: #008f51;
+
+  background: transparent;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.gallery-button:hover {
+  color: #ffffff;
+
+  background: #08a55c;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   GRID ICON
+========================================= */
+
+.gallery-grid-icon {
+  font-size: 14px;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   PHOTOGRAPHER
+========================================= */
+
+.gallery-photographer {
+  position: absolute;
+
+  right: 25px;
+
+  bottom: -3px;
+
+  width: 130px;
+
+  height: 175px;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: center;
+
+  font-size: 115px;
+
+  line-height: 1;
+
+  z-index: 2;
+
+  transform: rotate(-3deg);
+}
+
+
+/* =========================================
+   DECORATIONS
+========================================= */
+
+.gallery-decoration {
+  position: absolute;
+
+  z-index: 2;
+
+  pointer-events: none;
+}
+
+
+.gallery-decoration-one {
+  right: 90px;
+
+  bottom: 72px;
+
+  font-size: 20px;
+}
+
+
+.gallery-decoration-two {
+  right: 135px;
+
+  bottom: 155px;
+
+  font-size: 25px;
+
+  transform: rotate(-15deg);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .gallery-section {
+    padding:
+      85px
+      22px
+      100px;
+  }
+
+
+  .gallery-images {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 18px;
+  }
+
+
+  .gallery-image-box {
+    height: 230px;
+  }
+
+
+  .gallery-photographer {
+    right: 10px;
+
+    transform:
+      scale(0.85)
+      rotate(-3deg);
+
+    transform-origin: bottom right;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .gallery-section {
+    min-height: auto;
+
+    padding:
+      70px
+      15px
+      120px;
+  }
+
+
+  .gallery-header {
+    margin-bottom: 30px;
+  }
+
+
+  .gallery-label {
+    font-size: 11px;
+  }
+
+
+  .gallery-title {
+    font-size: 30px;
+  }
+
+
+  .gallery-images {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+
+  .gallery-image-box {
+    width: 100%;
+
+    max-width: 360px;
+
+    height: 220px;
+
+    margin: 0 auto;
+
+    border-radius: 23px;
+  }
+
+
+  .gallery-button-wrapper {
+    margin-top: 35px;
+  }
+
+
+  .gallery-button {
+    height: 38px;
+
+    min-width: 175px;
+  }
+
+
+  .gallery-photographer {
+    right: -5px;
+
+    bottom: -15px;
+
+    transform:
+      scale(0.7)
+      rotate(-3deg);
+
+    transform-origin: bottom right;
+  }
+
+
+  .gallery-decoration-one {
+    right: 75px;
+
+    bottom: 80px;
+  }
+
+
+  .gallery-decoration-two {
+    right: 105px;
+
+    bottom: 145px;
+  }
+
+}
